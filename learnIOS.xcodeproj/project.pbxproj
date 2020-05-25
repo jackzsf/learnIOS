@@ -14,6 +14,7 @@
 		93C588F1247B9C0000CEDD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C588F0247B9C0000CEDD0A /* Assets.xcassets */; };
 		93C588F4247B9C0000CEDD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C588F2247B9C0000CEDD0A /* LaunchScreen.storyboard */; };
 		93C588F7247B9C0000CEDD0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588F6247B9C0000CEDD0A /* main.m */; };
+		93C58900247B9EB900CEDD0A /* LRUCacheMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588FF247B9EB900CEDD0A /* LRUCacheMap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		93C588F3247B9C0000CEDD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C588F5247B9C0000CEDD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C588F6247B9C0000CEDD0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93C588FE247B9EB900CEDD0A /* LRUCacheMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRUCacheMap.h; sourceTree = "<group>"; };
+		93C588FF247B9EB900CEDD0A /* LRUCacheMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRUCacheMap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		93C588E3247B9BF900CEDD0A /* learnIOS */ = {
 			isa = PBXGroup;
 			children = (
+				93C588FD247B9E4900CEDD0A /* Algrorithm */,
 				93C588E4247B9BF900CEDD0A /* AppDelegate.h */,
 				93C588E5247B9BF900CEDD0A /* AppDelegate.m */,
 				93C588E7247B9BF900CEDD0A /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				93C588F6247B9C0000CEDD0A /* main.m */,
 			);
 			path = learnIOS;
+			sourceTree = "<group>";
+		};
+		93C588FD247B9E4900CEDD0A /* Algrorithm */ = {
+			isa = PBXGroup;
+			children = (
+				93C588FE247B9EB900CEDD0A /* LRUCacheMap.h */,
+				93C588FF247B9EB900CEDD0A /* LRUCacheMap.m */,
+			);
+			path = Algrorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +161,7 @@
 			files = (
 				93C588EC247B9BF900CEDD0A /* ViewController.m in Sources */,
 				93C588E6247B9BF900CEDD0A /* AppDelegate.m in Sources */,
+				93C58900247B9EB900CEDD0A /* LRUCacheMap.m in Sources */,
 				93C588F7247B9C0000CEDD0A /* main.m in Sources */,
 				93C588E9247B9BF900CEDD0A /* SceneDelegate.m in Sources */,
 			);
