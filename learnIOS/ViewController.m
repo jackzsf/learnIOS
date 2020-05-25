@@ -26,6 +26,7 @@
 
 - (void)lRUCacheMapTest{
     NSLog(@"lRUCacheMapTest...");
+    
     for (int i = 1; i <=5; i++){
         NSString *key = [NSString stringWithFormat:@"%d",i];
         NSString *value = [NSString stringWithFormat:@"%d",i*100];
