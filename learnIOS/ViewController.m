@@ -25,7 +25,7 @@
 }
 
 - (void)lRUCacheMapTest{
-    NSLog(@"lRUCacheMapTest 12345...");
+    NSLog(@"lRUCacheMapTest 1234567...");
     
     for (int i = 1; i <=5; i++){
         NSString *key = [NSString stringWithFormat:@"%d",i];
