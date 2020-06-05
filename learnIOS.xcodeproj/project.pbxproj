@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84188B5A215E712601AA7B0F /* Pods_learnIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695C1AEA928E5EB82B719860 /* Pods_learnIOS.framework */; };
 		93C588E6247B9BF900CEDD0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588E5247B9BF900CEDD0A /* AppDelegate.m */; };
 		93C588E9247B9BF900CEDD0A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588E8247B9BF900CEDD0A /* SceneDelegate.m */; };
 		93C588EC247B9BF900CEDD0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588EB247B9BF900CEDD0A /* ViewController.m */; };
@@ -18,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14452D0292EE3EBC4BCDDCE0 /* Pods-learnIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnIOS.release.xcconfig"; path = "Target Support Files/Pods-learnIOS/Pods-learnIOS.release.xcconfig"; sourceTree = "<group>"; };
+		35FCC2F6B0C21CC237AC7AFF /* Pods-learnIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnIOS.debug.xcconfig"; path = "Target Support Files/Pods-learnIOS/Pods-learnIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		695C1AEA928E5EB82B719860 /* Pods_learnIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learnIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9358FB452489DAE0003024B2 /* Algrorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algrorithm.h; sourceTree = "<group>"; };
+		9358FB492489EB22003024B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		93C588E1247B9BF900CEDD0A /* learnIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C588E4247B9BF900CEDD0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93C588E5247B9BF900CEDD0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84188B5A215E712601AA7B0F /* Pods_learnIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6ED7425CD8C7B9794F862CD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				695C1AEA928E5EB82B719860 /* Pods_learnIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		900FCDD08BA226AB0DE3720E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35FCC2F6B0C21CC237AC7AFF /* Pods-learnIOS.debug.xcconfig */,
+				14452D0292EE3EBC4BCDDCE0 /* Pods-learnIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		93C588D8247B9BF900CEDD0A = {
 			isa = PBXGroup;
 			children = (
 				93C588E3247B9BF900CEDD0A /* learnIOS */,
 				93C588E2247B9BF900CEDD0A /* Products */,
+				900FCDD08BA226AB0DE3720E /* Pods */,
+				6ED7425CD8C7B9794F862CD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +90,7 @@
 		93C588E3247B9BF900CEDD0A /* learnIOS */ = {
 			isa = PBXGroup;
 			children = (
+				9358FB492489EB22003024B2 /* PrefixHeader.pch */,
 				93C588FD247B9E4900CEDD0A /* Algrorithm */,
 				93C588E4247B9BF900CEDD0A /* AppDelegate.h */,
 				93C588E5247B9BF900CEDD0A /* AppDelegate.m */,
@@ -83,6 +110,7 @@
 		93C588FD247B9E4900CEDD0A /* Algrorithm */ = {
 			isa = PBXGroup;
 			children = (
+				9358FB452489DAE0003024B2 /* Algrorithm.h */,
 				93C588FE247B9EB900CEDD0A /* LRUCacheMap.h */,
 				93C588FF247B9EB900CEDD0A /* LRUCacheMap.m */,
 			);
@@ -96,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93C588FA247B9C0000CEDD0A /* Build configuration list for PBXNativeTarget "learnIOS" */;
 			buildPhases = (
+				98190055CF1FA67F99B27BCD /* [CP] Check Pods Manifest.lock */,
 				93C588DD247B9BF900CEDD0A /* Sources */,
 				93C588DE247B9BF900CEDD0A /* Frameworks */,
 				93C588DF247B9BF900CEDD0A /* Resources */,
+				E862CEBD609C38F0A17F7C49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +183,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98190055CF1FA67F99B27BCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-learnIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E862CEBD609C38F0A17F7C49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-learnIOS/Pods-learnIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-learnIOS/Pods-learnIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-learnIOS/Pods-learnIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93C588DD247B9BF900CEDD0A /* Sources */ = {
@@ -301,9 +373,11 @@
 		};
 		93C588FB247B9C0000CEDD0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FCC2F6B0C21CC237AC7AFF /* Pods-learnIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = learnIOS/PrefixHeader.pch;
 				INFOPLIST_FILE = learnIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,9 +391,11 @@
 		};
 		93C588FC247B9C0000CEDD0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14452D0292EE3EBC4BCDDCE0 /* Pods-learnIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = learnIOS/PrefixHeader.pch;
 				INFOPLIST_FILE = learnIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

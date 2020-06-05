@@ -8,11 +8,12 @@
 
 #import "LRUCacheMap.h"
 
+
 @interface LRUCacheMap ()
 
 @property(nonatomic, assign) NSInteger capacity;
 @property(nonatomic, strong) NSMutableDictionary *cacheDict;
-@property(nonatomic, strong) NSMutableArray *keys;
+@property(nonatomic, strong) NSMutableArray *keys;//通过字典key的数组的位置来表示使用的时序
 @end
 
 @implementation LRUCacheMap
