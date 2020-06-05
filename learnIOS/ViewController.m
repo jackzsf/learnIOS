@@ -93,9 +93,9 @@
     
     for (int i = 0; i < [array count]; i++) {
         for (int j = i+1; j < [array count]; j++) {
-            if ([array[i] intValue] > [array[j] intValue]) {
+            if ([result[i] intValue] > [result[j] intValue]) {
                 result = [self swap:result i:i j:j];
-//                NSLog(@"temp array is %@",[result jsonStringEncoded]);
+//                NSLog(@"temp array is %@,i is %d,j is %d",[result jsonStringEncoded],i,j);
             }
         }
     }
