@@ -24,6 +24,7 @@
 		695C1AEA928E5EB82B719860 /* Pods_learnIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learnIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9358FB452489DAE0003024B2 /* Algrorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algrorithm.h; sourceTree = "<group>"; };
 		9358FB492489EB22003024B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9358FB4B2489F805003024B2 /* Git.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Git.h; sourceTree = "<group>"; };
 		93C588E1247B9BF900CEDD0A /* learnIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C588E4247B9BF900CEDD0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93C588E5247B9BF900CEDD0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +70,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9358FB4A2489F7B9003024B2 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				9358FB4B2489F805003024B2 /* Git.h */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
 		93C588D8247B9BF900CEDD0A = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9358FB492489EB22003024B2 /* PrefixHeader.pch */,
+				9358FB4A2489F7B9003024B2 /* docs */,
 				93C588FD247B9E4900CEDD0A /* Algrorithm */,
 				93C588E4247B9BF900CEDD0A /* AppDelegate.h */,
 				93C588E5247B9BF900CEDD0A /* AppDelegate.m */,

@@ -79,6 +79,7 @@
 {
     NSArray *array = @[@3,@5,@2,@4,@8,@7,@1];
     NSLog(@"origin array is %@",[array jsonStringEncoded]);
+    
     array = [self bubbleSort1:array];
     
     NSLog(@"result array is %@",[array jsonStringEncoded]);
@@ -102,6 +103,7 @@
     return result;
 }
 
+//交换array的i和j的内容
 - (NSMutableArray *)swap:(NSMutableArray *)array i:(NSInteger)i j:(NSInteger)j
 {
     if (!array || [array count] == 0 || i >= [array count] || j >= [array count]) {
