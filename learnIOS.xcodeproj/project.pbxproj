@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84188B5A215E712601AA7B0F /* Pods_learnIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695C1AEA928E5EB82B719860 /* Pods_learnIOS.framework */; };
+		9358FB4E248A3596003024B2 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB4D248A3596003024B2 /* BubbleSort.m */; };
 		93C588E6247B9BF900CEDD0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588E5247B9BF900CEDD0A /* AppDelegate.m */; };
 		93C588E9247B9BF900CEDD0A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588E8247B9BF900CEDD0A /* SceneDelegate.m */; };
 		93C588EC247B9BF900CEDD0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588EB247B9BF900CEDD0A /* ViewController.m */; };
@@ -25,6 +26,8 @@
 		9358FB452489DAE0003024B2 /* Algrorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algrorithm.h; sourceTree = "<group>"; };
 		9358FB492489EB22003024B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9358FB4B2489F805003024B2 /* Git.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Git.h; sourceTree = "<group>"; };
+		9358FB4C248A3596003024B2 /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		9358FB4D248A3596003024B2 /* BubbleSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
 		93C588E1247B9BF900CEDD0A /* learnIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C588E4247B9BF900CEDD0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93C588E5247B9BF900CEDD0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				9358FB452489DAE0003024B2 /* Algrorithm.h */,
 				93C588FE247B9EB900CEDD0A /* LRUCacheMap.h */,
 				93C588FF247B9EB900CEDD0A /* LRUCacheMap.m */,
+				9358FB4C248A3596003024B2 /* BubbleSort.h */,
+				9358FB4D248A3596003024B2 /* BubbleSort.m */,
 			);
 			path = Algrorithm;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 				93C58900247B9EB900CEDD0A /* LRUCacheMap.m in Sources */,
 				93C588F7247B9C0000CEDD0A /* main.m in Sources */,
 				93C588E9247B9BF900CEDD0A /* SceneDelegate.m in Sources */,
+				9358FB4E248A3596003024B2 /* BubbleSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
