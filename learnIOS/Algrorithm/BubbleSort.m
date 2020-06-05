@@ -7,6 +7,7 @@
 //
 
 #import "BubbleSort.h"
+#import "AlgrorithmTools.h"
 
 @implementation BubbleSort
 
@@ -20,7 +21,7 @@
     for (int i = 0; i < [array count]; i++) {
         for (int j = i+1; j < [array count]; j++) {
             if ([result[i] intValue] > [result[j] intValue]) {
-                result = [[self class] swap:result i:i j:j];
+                result = [AlgrorithmTools swap:result i:i j:j];
 //                NSLog(@"temp array is %@,i is %d,j is %d",[result jsonStringEncoded],i,j);
             }
         }
@@ -43,7 +44,7 @@
         for (NSUInteger j = ([array count] - 1); j>=1; j--) {
             loopCount++;
             if ([result[j-1] intValue] > [result[j] intValue]) {
-                result = [[self class] swap:result i:(j-1) j:j];
+                result = [AlgrorithmTools swap:result i:(j-1) j:j];
 //                NSLog(@"temp array is %@,i is %d,j is %lu",[result jsonStringEncoded],i,j);
                 flag = true;
             }
@@ -56,18 +57,6 @@
     return result;
 }
 
-//交换array的i和j的内容
-+ (NSMutableArray *)swap:(NSMutableArray *)array i:(NSInteger)i j:(NSInteger)j
-{
-    if (!array || [array count] == 0 || i >= [array count] || j >= [array count]) {
-        return array;
-    }
-    
-    id tempValue = array[i];
-    array[i] = array[j];
-    array[j] = tempValue;
-    
-    return array;
-}
+
 
 @end

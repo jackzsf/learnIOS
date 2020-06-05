@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LRUCacheMap.h"
 #import "BubbleSort.h"
+#import "SelectSort.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,7 @@
     // Do any additional setup after loading the view.
     
 //    [self lRUCacheMapTest];
-    [self bubbleSortTest];
+    [self sortTest];
 }
 
 #pragma mark ****************************** LRUCacheMap
@@ -74,18 +75,29 @@
     return _lruCacheMap;
 }
 
-#pragma mark ****************************** BubbleSort
-
-- (void)bubbleSortTest
-{
+- (void)sortTest{
     NSArray *array = @[@3,@5,@2,@4,@8,@7,@1];
     NSLog(@"origin array is %@",[array jsonStringEncoded]);
     
-//    array = [BubbleSort bubbleSort1:array];
-    array = [BubbleSort bubbleSort2:array];
+//    array = [self bubbleSortTest:array];
+    array = [self selectSortTest:array];
     NSLog(@"result array is %@",[array jsonStringEncoded]);
 }
 
+#pragma mark ****************************** BubbleSort
+
+- (NSArray *)bubbleSortTest:(NSArray *)array
+{
+    array = [BubbleSort bubbleSort2:array];
+    return array;
+}
+
+- (NSArray *)selectSortTest:(NSArray *)array
+{
+    array = [SelectSort selectSort1:array];
+    
+    return array;
+}
 
 
 
