@@ -13,6 +13,7 @@
 
 + (NSMutableArray *)selectSort1:(NSArray *)array
 {
+    NSLog(@"选择排序...");
     NSMutableArray *result = [NSMutableArray arrayWithArray:array];
     if (!array || [array count] == 0) {
         return result;

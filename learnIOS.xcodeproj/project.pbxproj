@@ -11,6 +11,7 @@
 		9358FB4E248A3596003024B2 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB4D248A3596003024B2 /* BubbleSort.m */; };
 		9358FB51248A3F7B003024B2 /* AlgrorithmTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB50248A3F7B003024B2 /* AlgrorithmTools.m */; };
 		9358FB54248A3FD1003024B2 /* SelectSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB53248A3FD1003024B2 /* SelectSort.m */; };
+		9358FB57248E0F75003024B2 /* InsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB56248E0F75003024B2 /* InsertSort.m */; };
 		93C588E6247B9BF900CEDD0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588E5247B9BF900CEDD0A /* AppDelegate.m */; };
 		93C588E9247B9BF900CEDD0A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588E8247B9BF900CEDD0A /* SceneDelegate.m */; };
 		93C588EC247B9BF900CEDD0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588EB247B9BF900CEDD0A /* ViewController.m */; };
@@ -34,6 +35,8 @@
 		9358FB50248A3F7B003024B2 /* AlgrorithmTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgrorithmTools.m; sourceTree = "<group>"; };
 		9358FB52248A3FD1003024B2 /* SelectSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSort.h; sourceTree = "<group>"; };
 		9358FB53248A3FD1003024B2 /* SelectSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectSort.m; sourceTree = "<group>"; };
+		9358FB55248E0F75003024B2 /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
+		9358FB56248E0F75003024B2 /* InsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertSort.m; sourceTree = "<group>"; };
 		93C588E1247B9BF900CEDD0A /* learnIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C588E4247B9BF900CEDD0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93C588E5247B9BF900CEDD0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				9358FB4D248A3596003024B2 /* BubbleSort.m */,
 				9358FB52248A3FD1003024B2 /* SelectSort.h */,
 				9358FB53248A3FD1003024B2 /* SelectSort.m */,
+				9358FB55248E0F75003024B2 /* InsertSort.h */,
+				9358FB56248E0F75003024B2 /* InsertSort.m */,
 			);
 			path = Algrorithm;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				93C588F7247B9C0000CEDD0A /* main.m in Sources */,
 				93C588E9247B9BF900CEDD0A /* SceneDelegate.m in Sources */,
 				9358FB4E248A3596003024B2 /* BubbleSort.m in Sources */,
+				9358FB57248E0F75003024B2 /* InsertSort.m in Sources */,
 				9358FB54248A3FD1003024B2 /* SelectSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

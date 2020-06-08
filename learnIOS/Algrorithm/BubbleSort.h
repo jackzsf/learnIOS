@@ -10,14 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BubbleSort : NSObject
-
 /**
- 冒泡排序时间复杂度
- 本身有序的话，n-1次比较，时间复杂度是O(n)
- 最坏的逆序情况，需要比较1+2+3+...+(n-1) = n*(n)/2, 移动次数也那么多，时间复杂度是O(n²)
- */
+冒泡排序时间复杂度
+本身有序的话，n-1次比较，时间复杂度是O(n)
+最坏的逆序情况，需要比较1+2+3+...+(n-1) = n*(n)/2, 移动次数也那么多，
+时间复杂度是比较与交换的总和，所以是O(n²)，时间复杂度是O(n²)
+*/
 
+@interface BubbleSort : NSObject
 + (NSMutableArray *)bubbleSort1:(NSArray *)array;
 + (NSMutableArray *)bubbleSort2:(NSArray *)array;
 

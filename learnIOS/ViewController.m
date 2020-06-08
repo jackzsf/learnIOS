@@ -10,6 +10,7 @@
 #import "LRUCacheMap.h"
 #import "BubbleSort.h"
 #import "SelectSort.h"
+#import "InsertSort.h"
 
 @interface ViewController ()
 
@@ -80,7 +81,8 @@
     NSLog(@"origin array is %@",[array jsonStringEncoded]);
     
 //    array = [self bubbleSortTest:array];
-    array = [self selectSortTest:array];
+//    array = [self selectSortTest:array];
+    array = [self insertSortTest:array];
     NSLog(@"result array is %@",[array jsonStringEncoded]);
 }
 
@@ -95,6 +97,13 @@
 - (NSArray *)selectSortTest:(NSArray *)array
 {
     array = [SelectSort selectSort1:array];
+    
+    return array;
+}
+
+- (NSArray *)insertSortTest:(NSArray *)array
+{
+    array = [InsertSort insertSort1:array];
     
     return array;
 }
