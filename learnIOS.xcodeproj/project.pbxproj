@@ -12,6 +12,7 @@
 		9358FB51248A3F7B003024B2 /* AlgrorithmTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB50248A3F7B003024B2 /* AlgrorithmTools.m */; };
 		9358FB54248A3FD1003024B2 /* SelectSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB53248A3FD1003024B2 /* SelectSort.m */; };
 		9358FB57248E0F75003024B2 /* InsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB56248E0F75003024B2 /* InsertSort.m */; };
+		9358FB5A248E258B003024B2 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358FB59248E258B003024B2 /* MergeSort.m */; };
 		93C588E6247B9BF900CEDD0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588E5247B9BF900CEDD0A /* AppDelegate.m */; };
 		93C588E9247B9BF900CEDD0A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588E8247B9BF900CEDD0A /* SceneDelegate.m */; };
 		93C588EC247B9BF900CEDD0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C588EB247B9BF900CEDD0A /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		9358FB53248A3FD1003024B2 /* SelectSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectSort.m; sourceTree = "<group>"; };
 		9358FB55248E0F75003024B2 /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
 		9358FB56248E0F75003024B2 /* InsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertSort.m; sourceTree = "<group>"; };
+		9358FB58248E258B003024B2 /* MergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		9358FB59248E258B003024B2 /* MergeSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
 		93C588E1247B9BF900CEDD0A /* learnIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C588E4247B9BF900CEDD0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93C588E5247B9BF900CEDD0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				9358FB53248A3FD1003024B2 /* SelectSort.m */,
 				9358FB55248E0F75003024B2 /* InsertSort.h */,
 				9358FB56248E0F75003024B2 /* InsertSort.m */,
+				9358FB58248E258B003024B2 /* MergeSort.h */,
+				9358FB59248E258B003024B2 /* MergeSort.m */,
 			);
 			path = Algrorithm;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9358FB5A248E258B003024B2 /* MergeSort.m in Sources */,
 				93C588EC247B9BF900CEDD0A /* ViewController.m in Sources */,
 				93C588E6247B9BF900CEDD0A /* AppDelegate.m in Sources */,
 				93C58900247B9EB900CEDD0A /* LRUCacheMap.m in Sources */,

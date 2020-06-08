@@ -11,6 +11,7 @@
 #import "BubbleSort.h"
 #import "SelectSort.h"
 #import "InsertSort.h"
+#import "MergeSort.h"
 
 @interface ViewController ()
 
@@ -78,11 +79,14 @@
 
 - (void)sortTest{
     NSArray *array = @[@3,@5,@2,@4,@8,@7,@1];
-    NSLog(@"origin array is %@",[array jsonStringEncoded]);
+    NSArray *array1 = @[@1,@3,@4,@5,@7,@9];
+    NSArray *array2 = @[@2,@6,@8,@10,@12,@14];
+//    NSLog(@"origin array is %@",[array jsonStringEncoded]);
     
 //    array = [self bubbleSortTest:array];
 //    array = [self selectSortTest:array];
-    array = [self insertSortTest:array];
+//    array = [self insertSortTest:array];
+    array = [self mergeSortTest:array1 array2:array2];
     NSLog(@"result array is %@",[array jsonStringEncoded]);
 }
 
@@ -106,6 +110,13 @@
     array = [InsertSort insertSort1:array];
     
     return array;
+}
+
+- (NSArray *)mergeSortTest:(NSArray *)array1 array2:(NSArray *)array2
+{
+    NSMutableArray *array = [MergeSort mergeTwoArr:array1 arr2:array2];
+    
+    return [NSArray arrayWithArray:array];
 }
 
 
