@@ -56,4 +56,27 @@
     return result;
 }
 
++ (NSMutableArray *)mergeSortArr:(NSArray *)array
+{
+    NSMutableArray *result = [NSMutableArray arrayWithArray:array];
+    if (!array || [array count] == 0) {
+        return result;
+    }
+    
+    if (([array count] == 1)) {
+        return result;
+    }
+    NSInteger middle = [array count]/2;
+    
+    NSMutableArray *leftArr = [NSMutableArray arrayWithArray:[array subarrayWithRange:NSMakeRange(0,middle)]] ;
+    NSMutableArray *rightArr = [NSMutableArray arrayWithArray:[array subarrayWithRange:NSMakeRange(middle, [array count]-middle)]];
+    
+    NSMutableArray *arr1 =  [[self class] mergeSortArr:leftArr];
+    NSMutableArray *arr2 = [[self class] mergeSortArr:rightArr];
+    
+    result = [[self class] mergeTwoArr:arr1 arr2:arr2];
+    
+    return result;
+}
+
 @end

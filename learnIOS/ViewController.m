@@ -78,15 +78,16 @@
 }
 
 - (void)sortTest{
-    NSArray *array = @[@3,@5,@2,@4,@8,@7,@1];
-    NSArray *array1 = @[@1,@3,@4,@5,@7,@9];
-    NSArray *array2 = @[@2,@6,@8,@10,@12,@14];
+    NSArray *array = @[@3,@5,@2,@4,@8,@7,@1,@100];
+//    NSArray *array1 = @[@1,@3,@4,@5,@7,@9];
+//    NSArray *array2 = @[@2,@6,@8,@10,@12,@14];
 //    NSLog(@"origin array is %@",[array jsonStringEncoded]);
     
 //    array = [self bubbleSortTest:array];
 //    array = [self selectSortTest:array];
 //    array = [self insertSortTest:array];
-    array = [self mergeSortTest:array1 array2:array2];
+//    array = [self mergeSortTest:array1 array2:array2];
+    array = [self mergeSortTest1:array];
     NSLog(@"result array is %@",[array jsonStringEncoded]);
 }
 
@@ -108,6 +109,13 @@
 - (NSArray *)insertSortTest:(NSArray *)array
 {
     array = [InsertSort insertSort1:array];
+    
+    return array;
+}
+
+- (NSArray *)mergeSortTest1:(NSArray *)array
+{
+    array = [MergeSort mergeSortArr:array];
     
     return array;
 }
