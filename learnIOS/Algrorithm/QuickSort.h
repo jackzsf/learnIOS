@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface QuickSort : NSObject
 
++ (NSMutableArray *)quickSort1:(NSArray *)array;
+
 @end
 
 NS_ASSUME_NONNULL_END

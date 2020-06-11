@@ -12,6 +12,7 @@
 #import "SelectSort.h"
 #import "InsertSort.h"
 #import "MergeSort.h"
+#import "QuickSort.h"
 
 @interface ViewController ()
 
@@ -79,6 +80,7 @@
 
 - (void)sortTest{
     NSArray *array = @[@3,@5,@2,@4,@8,@7,@1,@100];
+//    array = @[@5,@1,@9,@3,@7,@4,@8,@6,@2];
 //    NSArray *array1 = @[@1,@3,@4,@5,@7,@9];
 //    NSArray *array2 = @[@2,@6,@8,@10,@12,@14];
 //    NSLog(@"origin array is %@",[array jsonStringEncoded]);
@@ -87,7 +89,8 @@
 //    array = [self selectSortTest:array];
 //    array = [self insertSortTest:array];
 //    array = [self mergeSortTest:array1 array2:array2];
-    array = [self mergeSortTest1:array];
+//    array = [self mergeSortTest1:array];
+    array = [self quickSortTest1:array];
     NSLog(@"result array is %@",[array jsonStringEncoded]);
 }
 
@@ -127,6 +130,11 @@
     return [NSArray arrayWithArray:array];
 }
 
-
+- (NSArray *)quickSortTest1:(NSArray *)array
+{
+    array = [QuickSort quickSort1:array];
+    
+    return array;
+}
 
 @end
